@@ -41,7 +41,9 @@ values."
      github
      ruby
      ruby-on-rails
+     javascript
      html
+     go
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -275,6 +277,8 @@ layers configuration. You are free to put any user code."
  '(blink-cursor-mode nil)
  '(column-number-mode t)
  '(tool-bar-mode nil))
+ (setq-default js2-basic-offset 2)
+ (setq-default js-indent-level 2)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
