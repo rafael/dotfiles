@@ -1,6 +1,6 @@
 export ZSH=/home/rafael/.oh-my-zsh
 ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_MODE='awesome-fontconfig'
+POWERLEVEL9K_MODE='powerline'
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 POWERLEVEL9K_SHORTEN_DELIMITER=".."
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_unique"
@@ -89,3 +89,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.zprofile
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/rafael/sandboxes/sub/google-cloud-sdk/path.zsh.inc' ]; then . '/home/rafael/sandboxes/sub/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/rafael/sandboxes/sub/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/rafael/sandboxes/sub/google-cloud-sdk/completion.zsh.inc'; fi
